@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React from CDN!</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/jsx">
+      const container = document.getElementById("root");
+      const app = ReactDOM.createRoot(container);
+
+      function Header(props){
+        return(
+        <>
+          <h1>Hello form {props.name}🚀</h1>
+        </>
+        )
+      }
+
+      app.render(
+        <>
+        <Header name="Farhan" />
+        <Header name="Doe" />
+        </>
+      )
+    </script>
+  </body>
+</html>

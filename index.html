@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Javascript to React</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script type="text/javascript">
+      // mendapatkan id app
+      const app = document.getElementById("app");
+
+      // membuat elemet tag H1
+      const header = document.createElement("h1");
+
+      // Memasukan text kedalam elemnt H1
+      const headerContent = document.createTextNode(
+        "Belajar ReactJS from Javascript!"
+      );
+
+      // menambahkan content kedalam element H1
+      header.appendChild(headerContent);
+
+      // simpan element H1 kedalam element div
+      app.appendChild(header);
+    </script>
+  </body>
+</html>
